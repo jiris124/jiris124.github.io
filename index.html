@@ -1,17 +1,66 @@
-<!DOCTYPE html>
-<html lang="cs">
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Jiří Svoboda</title>
-	<meta name="description" content="Osobní webová stránka.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A personal website — introduction coming soon.">
+  <meta name="theme-color" content="#000000" id="theme-color">
 
-	<link rel="stylesheet" href="style.css">
+  <title>Jiří Svoboda</title>
+
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const savedTheme = localStorage.getItem("theme");
+
+      if (savedTheme === "light") {
+        root.dataset.theme = "light";
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("theme-toggle");
+        const themeColor = document.getElementById("theme-color");
+
+        const updateTheme = (theme) => {
+          const isLight = theme === "light";
+          root.dataset.theme = theme;
+          button.textContent = isLight ? "Dark mode" : "Light mode";
+          button.setAttribute("aria-label", `Switch to ${isLight ? "dark" : "light"} mode`);
+          themeColor.content = isLight ? "#ffffff" : "#000000";
+        };
+
+        updateTheme(root.dataset.theme);
+
+        button.addEventListener("click", () => {
+          const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
+          localStorage.setItem("theme", nextTheme);
+          updateTheme(nextTheme);
+        });
+      });
+    })();
+  </script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<p>TODO</p>
-	<img src="under_construction.webp" />
+  <button
+    class="theme-toggle"
+    id="theme-toggle"
+    type="button"
+    aria-label="Switch to light mode"
+  >
+    Light mode
+  </button>
+
+  <main class="intro">
+    <section class="intro__content" aria-labelledby="intro-title">
+      <p class="intro__label">Personal website</p>
+      <h1 class="intro__title" id="intro-title">Jiří Svoboda.</h1>
+      <p class="intro__text">
+        My interests lie at the intersection of Artificial Intelligence and Quantum Computing, with a focus on applying these methods to challenging problems in finance, science, and beyond.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
-
