@@ -18,8 +18,9 @@ Open [the homepage](http://127.0.0.1:8000/) or
 
 ## Timeline
 
-The full-width timeline opens at the newest dates on the right. Scroll down
-to move into the past. When the timeline has keyboard focus, the left and
+The full-width timeline opens at the newest dates on the right. The first
+part of the downward scroll keeps those dates in view, then moves into the
+past. When the timeline has keyboard focus, the left and
 right arrow keys move through time. Each category has a fixed label on the
 left. Dates and vertical guides give every row the same time scale.
 

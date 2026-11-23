@@ -104,10 +104,10 @@
     travel = Math.max(0, chartWidth - viewWidth);
     viewport.style.setProperty("--chart-width", chartWidth + "px");
     const stageTop = stage.getBoundingClientRect().top + window.scrollY;
-    // Let every lane enter the viewport at the newest date before panning.
-    // Release the pinned plot once the oldest date has come into view.
-    const extraSpace = Math.max(0, window.innerHeight - sticky.offsetHeight);
-    panStart = Math.max(0, stageTop - extraSpace);
+    const extraSpace = Math.max(0, boardHeight - sticky.offsetHeight);
+    // Keep the newest entries in place for a short scroll after the board comes into view.
+    const leadIn = travel > 0 ? Math.min(boardHeight / 4, 200) : 0;
+    panStart = Math.max(0, stageTop - extraSpace) + leadIn;
     stage.style.setProperty("--travel", Math.max(0, panStart + travel - stageTop + extraSpace) + "px");
     renderScroll();
   }
