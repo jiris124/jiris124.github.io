@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jiří Svoboda — education, projects, competitions, and other milestones.">
+  <meta name="theme-color" content="#000000" id="theme-color">
+
+  <title>Timeline — Jiří Svoboda</title>
+
+  <script src="theme.js"></script>
+  <script src="timeline-layout.js?v=9" defer></script>
+  <script src="timeline.js?v=9" defer></script>
+  <link rel="stylesheet" href="style.css?v=9">
+</head>
+
+<body class="timeline-body">
+  <nav class="page-toolbar" aria-label="Page controls">
+    <a class="page-back" href="index.html#short-cv">← Back</a>
+
+    <button
+      class="theme-toggle"
+      id="theme-toggle"
+      type="button"
+      aria-label="Switch to light mode"
+    >
+      Light mode
+    </button>
+  </nav>
+
+  <main class="timeline-page">
+    <header class="timeline-page__header">
+      <p class="timeline-page__label">Full timeline</p>
+      <h1 class="timeline-page__title">Education &amp; work.</h1>
+      <p class="timeline-page__intro">
+        Scroll down to move back in time. Select an entry for details.
+      </p>
+      <div class="topic-legend" role="group" aria-label="Topics">
+        <span class="topic-legend__label">Topics</span>
+        <span class="topic-key"><span class="topic-dot" data-topic="ai-ml" aria-hidden="true"></span>AI / ML</span>
+        <span class="topic-key"><span class="topic-dot" data-topic="quantum" aria-hidden="true"></span>Quantum</span>
+        <span class="topic-key"><span class="topic-dot" data-topic="finance" aria-hidden="true"></span>Finance</span>
+        <span class="topic-key"><span class="topic-dot" data-topic="medicine" aria-hidden="true"></span>Medicine</span>
+      </div>
+    </header>
+
+    <div id="timeline-stage">
+      <div class="timeline-sticky">
+        <div id="timeline-viewport" class="timeline-viewport" role="region" aria-label="Timeline by date and category" tabindex="0">
+          <div id="timeline-track" class="timeline-track">
+            <div class="timeline-ruler">
+              <div id="timeline-axis"></div>
+            </div>
+            <div id="timeline-grid" aria-hidden="true"></div>
+
+            <!-- Restore this lane with the first Experience entry.
+            <section class="timeline-lane" data-category="experience" aria-labelledby="lane-experience">
+              <h2 id="lane-experience" class="lane-label"><span>Experience</span></h2>
+              <div class="lane-bars"></div>
+            </section>
+            -->
+
+            <section class="timeline-lane" data-category="education" aria-labelledby="lane-education">
+              <h2 id="lane-education" class="lane-label"><span>Education</span></h2>
+              <div class="lane-bars"></div>
+            </section>
+
+            <section class="timeline-lane" data-category="training" aria-labelledby="lane-training">
+              <h2 id="lane-training" class="lane-label"><span>Training &amp; certifications</span></h2>
+              <div class="lane-bars"></div>
+            </section>
+
+            <section class="timeline-lane" data-category="projects" aria-labelledby="lane-projects">
+              <h2 id="lane-projects" class="lane-label"><span>Projects &amp; research</span></h2>
+              <div class="lane-bars"></div>
+            </section>
+
+            <section class="timeline-lane" data-category="hackathons" aria-labelledby="lane-hackathons">
+              <h2 id="lane-hackathons" class="lane-label"><span>Competitions &amp; hackathons</span></h2>
+              <div class="lane-bars"></div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="timeline-undated" aria-labelledby="undated-heading" hidden>
+      <h2 id="undated-heading">Undated</h2>
+      <div class="month-entries"></div>
+    </section>
+
+    <section id="timeline-source" aria-label="Entry details">
+      <article
+        class="entry-detail"
+        id="qminers-trading-arena"
+        data-category="hackathons"
+        data-topics="finance"
+        data-start="2026-11"
+        data-end="2026-11"
+      >
+        <h2>Qminers Trading Arena</h2>
+        <p class="entry-date"><time datetime="2026-11-07">7 November 2026</time> · Prague</p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="rakathon"
+        data-category="hackathons"
+        data-topics="ai-ml medicine"
+        data-start="2026-10"
+        data-end="2026-10"
+      >
+        <h2>Rakathon</h2>
+        <p class="entry-date"><time datetime="2026-10-16">16</time>–<time datetime="2026-10-18">18 October 2026</time> · Brno</p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="generals-bot-competition"
+        data-category="hackathons"
+        data-topics="ai-ml"
+        data-start="2026-08"
+        data-end="present"
+      >
+        <h2>Generals Bot Competition</h2>
+        <p class="entry-date">
+          <time datetime="2026-08">Aug 2026</time> — <span>Present</span>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="education-quantum-informatics"
+        data-category="education"
+        data-topics="ai-ml quantum finance"
+        data-start="2026-07"
+        data-end="present"
+        data-short-title="MSc in Quantum Informatics"
+      >
+        <h2>Quantum Informatics</h2>
+        <p class="entry-date">
+          <time datetime="2026-07">Jul 2026</time> — <span>Present</span>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="qbraid-vault-challenge"
+        data-category="hackathons"
+        data-topics="quantum"
+        data-start="2026-07"
+        data-end="2026-08"
+      >
+        <h2>qBraid Vault Challenge</h2>
+        <p class="entry-date">
+          <time datetime="2026-07">Jul 2026</time> —
+          <time datetime="2026-08">Aug 2026</time>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="prediction-markets-framework"
+        data-category="projects"
+        data-topics="ai-ml finance"
+        data-start="2026-07"
+        data-end="present"
+      >
+        <h2>Prediction Markets Framework</h2>
+        <p class="entry-date">
+          <time datetime="2026-07">Jul 2026</time> — <span>Present</span>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="quantum-finance-research"
+        data-category="projects"
+        data-topics="quantum finance"
+        data-start="2026-07"
+        data-end="present"
+        data-short-title="Quantum Finance Research"
+      >
+        <h2>Quantum Computing for Finance Research</h2>
+        <p class="entry-date">
+          <time datetime="2026-07">Jul 2026</time> — <span>Present</span>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="qiskit-global-summer-school-2026"
+        data-category="training"
+        data-topics="quantum"
+        data-start="2026-07"
+        data-end="2026-07"
+        data-short-title="Qiskit Global Summer School"
+      >
+        <h2>Qiskit Global Summer School 2026</h2>
+        <p class="entry-date">
+          <time datetime="2026-07">Jul 2026</time> —
+          <time datetime="2026-07">Jul 2026</time>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="qminers-quant-hackathon-2025"
+        data-category="hackathons"
+        data-topics="ai-ml finance"
+        data-start="2025-11"
+        data-end="2025-12"
+        data-short-title="Qminers Quant Hackathon"
+      >
+        <h2>Qminers Quant Hackathon 2025</h2>
+        <p class="entry-date">
+          <time datetime="2025-11">Nov 2025</time> —
+          <time datetime="2025-12">Dec 2025</time>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="quantum-risk-analysis"
+        data-category="projects"
+        data-topics="quantum finance"
+        data-start="2025-10"
+        data-end="2026-05"
+        data-short-title="Quantum Risk Analysis"
+      >
+        <h2>Quantum Risk Analysis in Financial Markets</h2>
+        <p class="entry-date">
+          <time datetime="2025-10">Oct 2025</time> —
+          <time datetime="2026-05">May 2026</time>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="ibm-road-to-practitioner"
+        data-category="training"
+        data-topics="quantum"
+        data-start="2025-10"
+        data-end="2026-01"
+        data-short-title="IBM Road to Practitioner"
+      >
+        <h2>IBM Quantum Road to Practitioner (R2P)</h2>
+        <p class="entry-date">
+          <time datetime="2025-10">Oct 2025</time> —
+          <time datetime="2026-01">Jan 2026</time>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="education-informatics-ai"
+        data-category="education"
+        data-topics="ai-ml quantum finance"
+        data-start="2023-09"
+        data-end="2026-06"
+        data-short-title="BSc in Artificial Intelligence"
+      >
+        <h2>Informatics — Artificial Intelligence</h2>
+        <p class="entry-date">
+          <time datetime="2023-09">Sep 2023</time> —
+          <time datetime="2026-06">Jun 2026</time>
+        </p>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="chronosteth"
+        data-category="projects"
+        data-topics=""
+      >
+        <h2>ChronoSteth</h2>
+        <p class="entry-description">TODO</p>
+      </article>
+
+      <article
+        class="entry-detail"
+        id="promptly-uncertain"
+        data-category="projects"
+        data-topics=""
+      >
+        <h2>Promptly Uncertain</h2>
+        <p class="entry-description">TODO</p>
+      </article>
+    </section>
+  </main>
+
+  <dialog id="timeline-dialog" aria-label="Entry details">
+    <button type="button" data-close aria-label="Close details">Close <span aria-hidden="true">×</span></button>
+    <div data-dialog-content></div>
+  </dialog>
+</body>
+</html>
