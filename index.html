@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A personal website — introduction coming soon.">
+  <meta name="description" content="Jiří Svoboda’s education and projects in artificial intelligence, quantum computing, and quantitative finance.">
   <meta name="theme-color" content="#000000" id="theme-color">
 
   <title>Jiří Svoboda</title>
 
   <script src="theme.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 
 <body>
@@ -22,13 +22,85 @@
     Light mode
   </button>
 
-  <main class="intro">
-    <section class="intro__content" aria-labelledby="intro-title">
-      <p class="intro__label">Personal website</p>
-      <h1 class="intro__title" id="intro-title">Jiří Svoboda.</h1>
-      <p class="intro__text">
-        My interests lie at the intersection of Artificial Intelligence and Quantum Computing, with a focus on applying these methods to challenging problems in finance, science, and beyond.
-      </p>
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro__content">
+        <p class="intro__label">Personal website</p>
+        <h1 class="intro__title" id="intro-title">Jiří Svoboda.</h1>
+        <p class="intro__text">
+          My interests lie at the intersection of Artificial Intelligence and Quantum Computing, with a focus on applying these methods to challenging problems in finance, science, and beyond.
+        </p>
+      </div>
+
+      <a class="scroll-cue" href="#short-cv" aria-label="Continue to short CV">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </a>
+    </section>
+
+    <section class="short-cv" id="short-cv" aria-labelledby="short-cv-title">
+      <div class="short-cv__inner">
+        <header class="section-heading">
+          <p class="section-heading__label">At a glance</p>
+          <h2 class="section-heading__title" id="short-cv-title">Short CV</h2>
+          <p class="section-heading__text">
+            My bachelor’s thesis on financial risk led to my current research on quantum algorithms for finance.
+          </p>
+        </header>
+
+        <div class="cv-grid">
+          <section aria-labelledby="education-title">
+            <h3 class="cv-column__title" id="education-title">Education</h3>
+
+            <div class="cv-list">
+              <article class="cv-item">
+                <p class="cv-item__meta">2026 — Present</p>
+                <h4 class="cv-item__title">MSc in Quantum Informatics</h4>
+                <p class="cv-item__text">
+                  Czech Technical University in Prague, FIT
+                </p>
+                <p class="cv-item__text">
+                  Focused on quantum computing, machine learning, optimization, and their applications.
+                </p>
+              </article>
+
+              <article class="cv-item">
+                <p class="cv-item__meta">2023 — 2026</p>
+                <h4 class="cv-item__title">BSc in Artificial Intelligence</h4>
+                <p class="cv-item__text">
+                  Czech Technical University in Prague, FIT
+                </p>
+                <p class="cv-item__text">
+                  Graduated with honours. Focused on machine learning, probability, algorithms, and quantum computing.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <section aria-labelledby="projects-title">
+            <h3 class="cv-column__title" id="projects-title">Ongoing projects</h3>
+
+            <div class="cv-list">
+              <article class="cv-item">
+                <p class="cv-item__meta">Research · Quantum Computing & Finance</p>
+                <h4 class="cv-item__title">Quantum Finance Research</h4>
+                <p class="cv-item__text">
+                  Exploring applications of quantum algorithms to financial modelling, risk estimation, and computational finance.
+                </p>
+              </article>
+
+              <article class="cv-item">
+                <p class="cv-item__meta">Development · Quantitative Finance</p>
+                <h4 class="cv-item__title">Prediction Markets</h4>
+                <p class="cv-item__text">
+                  Building tools for prediction-market data, probabilistic modelling, strategy evaluation, and automated trading research.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </div>
     </section>
   </main>
 </body>
