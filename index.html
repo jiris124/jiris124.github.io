@@ -8,38 +8,7 @@
 
   <title>Jiří Svoboda</title>
 
-  <script>
-    (() => {
-      const root = document.documentElement;
-      const savedTheme = localStorage.getItem("theme");
-
-      if (savedTheme === "light") {
-        root.dataset.theme = "light";
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const button = document.getElementById("theme-toggle");
-        const themeColor = document.getElementById("theme-color");
-
-        const updateTheme = (theme) => {
-          const isLight = theme === "light";
-          root.dataset.theme = theme;
-          button.textContent = isLight ? "Dark mode" : "Light mode";
-          button.setAttribute("aria-label", `Switch to ${isLight ? "dark" : "light"} mode`);
-          themeColor.content = isLight ? "#ffffff" : "#000000";
-        };
-
-        updateTheme(root.dataset.theme);
-
-        button.addEventListener("click", () => {
-          const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
-          localStorage.setItem("theme", nextTheme);
-          updateTheme(nextTheme);
-        });
-      });
-    })();
-  </script>
-
+  <script src="theme.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
